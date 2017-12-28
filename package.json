@@ -2,6 +2,9 @@
   "name": "sonar",
   "version": "1.0.0",
   "main": "sonar.js",
+  "scripts": {
+    "out": "bash get_measure.sh	&& node sonar.js sonar_measure.json"
+  },
   "dependencies": {
     "handlebars": "^4.0.11"
   }
