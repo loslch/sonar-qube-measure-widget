@@ -1,0 +1,8 @@
+{
+  "name": "sonar",
+  "version": "1.0.0",
+  "main": "sonar.js",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
+}

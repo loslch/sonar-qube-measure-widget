@@ -1,0 +1,234 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <link href="sonar.css" media="all" rel="stylesheet"></link>
+    <link href="style.css" media="all" rel="stylesheet"></link>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="page-wrapper page-wrapper-context" id="container">
+        <div class="page-container" id="body">
+            <div id="content">
+                <main data-reactroot="" id="component-measures">
+                    <section class="page page-container" id="component-measures-home">
+                        <main id="component-measures-home-main">
+                            <ul class="measures-domains">
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Reliability
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-bugs">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/bugs?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-bugs-name">
+                                                            Bugs
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-bugs-value">
+                                                        <span>
+                                                            {{bugs}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li id="measure-reliability_rating">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/reliability_rating?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-reliability_rating-name">
+                                                            Reliability Rating
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-reliability_rating-value">
+                                                        {{#ifCond reliability_rating '<=' 1}}<span class="rating rating-A">A</span>{{else}}{{#ifCond reliability_rating '<=' 2}}<span class="rating rating-B">B</span>{{else}}{{#ifCond reliability_rating '<=' 3}}<span class="rating rating-C">C</span>{{else}}{{#ifCond reliability_rating '<=' 4}}<span class="rating rating-D">D</span>{{else}}{{#ifCond reliability_rating '<=' 5}}<span class="rating rating-E">E</span>{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Security
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-vulnerabilities">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/vulnerabilities?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-vulnerabilities-name">
+                                                            Vulnerabilities
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-vulnerabilities-value">
+                                                        <span>
+                                                            {{vulnerabilities}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li id="measure-security_rating">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/security_rating?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-security_rating-name">
+                                                            Security Rating
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-security_rating-value">
+                                                        {{#ifCond security_rating '<=' 1}}<span class="rating rating-A">A</span>{{else}}{{#ifCond security_rating '<=' 2}}<span class="rating rating-B">B</span>{{else}}{{#ifCond security_rating '<=' 3}}<span class="rating rating-C">C</span>{{else}}{{#ifCond security_rating '<=' 4}}<span class="rating rating-D">D</span>{{else}}{{#ifCond security_rating '<=' 5}}<span class="rating rating-E">E</span>{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Maintainability
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-code_smells">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/code_smells?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-code_smells-name">
+                                                            Code Smells
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-code_smells-value">
+                                                        <span>
+                                                            {{code_smells}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li id="measure-sqale_rating">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/sqale_rating?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-sqale_rating-name">
+                                                            Maintainability Rating
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-sqale_rating-value">
+                                                        {{#ifCond sqale_rating '<=' 1}}<span class="rating rating-A">A</span>{{else}}{{#ifCond sqale_rating '<=' 2}}<span class="rating rating-B">B</span>{{else}}{{#ifCond sqale_rating '<=' 3}}<span class="rating rating-C">C</span>{{else}}{{#ifCond sqale_rating '<=' 4}}<span class="rating rating-D">D</span>{{else}}{{#ifCond sqale_rating '<=' 5}}<span class="rating rating-E">E</span>{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}{{/ifCond}}
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Duplications
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-duplicated_lines_density">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/duplicated_lines_density?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-duplicated_lines_density-name">
+                                                            Duplicated Lines (%)
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-duplicated_lines_density-value">
+                                                        <span>
+                                                            {{duplicated_lines_density}}%
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Size
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-ncloc">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/ncloc?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-ncloc-name">
+                                                            Lines of Code
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-ncloc-value">
+                                                        <span>
+                                                            {{ncloc}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Complexity
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-complexity">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/complexity?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-complexity-name">
+                                                            Complexity
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-complexity-value">
+                                                        <span>
+                                                            {{complexity}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <header class="page-header">
+                                        <h3 class="page-title">
+                                            Violations
+                                        </h3>
+                                    </header>
+                                    <div class="home-measures-list clearfix">
+                                        <ul class="main-domain-measures">
+                                            <li id="measure-violations">
+                                                <a class="" target="_blank" href="sonar/component_measures/metric/violations?id=scm9%3APCN_pcn%3Amaster">
+                                                    <div class="domain-measures-name">
+                                                        <span id="measure-violations-name">
+                                                            Issues
+                                                        </span>
+                                                    </div>
+                                                    <div class="domain-measures-value" id="measure-violations-value">
+                                                        <span>
+                                                            {{violations}}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </main>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
